@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links</title>
+    <style>
+        /* Add some basic styling for better appearance */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1, h2, p {
+            margin-bottom: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Welcome to Agit's website!</h1>
+        <p>Explore the world through images of technology, nature, and delicious food.</p>
+        <a href="https://technology-example.com">
+            <img src="pic1.jpeg" alt="Technology Image">
+        </a>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Pictures</h2>
+        <div class="gallery">
+            <a href="https://nature-image1.com">
+                <img src="pic1.jpeg" alt="Nature Image 1">
+            </a>
+            <a href="https://nature-image2.com">
+                <img src="pic2.jpeg" alt="Nature Image 2">
+            </a>
+            <a href="https://nature-image3.com">
+                <img src="pic3.jpeg" alt="Nature Image 3">
+            </a>
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Delicious Menu</h2>
+        <ul>
+            <li>
+                <a href="https://www.istockphoto.com">
+                    <img src="pic4.jpeg" alt="Food Item 1">
+                    List 1
+                </a>
+            </li>
+            <li>
+                <a href="https://www.themediterraneandish.com/recipes/">
+                    <img src="fish 1.jpg" alt="Fish">
+                   list 2
+                </a>
+            </li>
+            <li>
+                <a href="https://www.themediterraneandish.com/category/meat-and-poultry/">
+                    <img src="meal 3.jpg" alt="meat-and-poultry">
+                    List 3
+                </a>
+            </li>
+        </ul>
+    </section>
+</body>
+
+</html>
