@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Styling Practice</title>
+<style>
+    /* General styling */
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    /* Header styling */
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    /* Introduction section */
+    .introduction {
+        background-color: #f7f7f7;
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+    /* Skills section */
+    .skills {
+        background-color: #fff;
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+    .skills ul {
+        list-style: none;
+        padding: 0;
+    }
+    .skills li {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 3px;
+    }
+    /* Contact section */
+    .contact {
+        background-color: #f0f0f0;
+        padding: 20px;
+        margin-top: 20px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .contact a {
+        display: block;
+        margin-bottom: 10px;
+        text-decoration: none;
+        color: #333;
+    }
+    /* Responsive design */
+    @media (max-width: 600px) {
+        .container {
+            padding: 10px;
+        }
+        .skills li {
+            padding: 8px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>MAGIC AGIT</h1>
+    </header>
+
+    <section class="introduction">
+        <h2>Introduction</h2>
+        <p>my name is georvaels  agit
+            am from Homa Bay county
+            land full of fatanity</p>
+    </section>
+
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Responsive Web Design</li>
+            <li>UI/UX Design</li>
+        </ul>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Information</h2>
+        <a href="mailto:yourname@example.com">georvaelsagit@gmail.com</a>
+        <a href="https://twitter.com/yourtwitter" target="_blank">Magicagit</a>
+        <a href="https://linkedin.com/in/yourlinkedin" target="_blank">Magicagit</a>
+    </section>
+</div>
+
+</body>
+</html>
