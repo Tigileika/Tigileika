@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration Form</title>
+<style>
+    /* Basic styling for form layout */
+    form {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-family: Arial, sans-serif;
+    }
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    input[type="text"], input[type="email"], input[type="tel"], select {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+    input[type="radio"] {
+        margin-right: 10px;
+    }
+    button {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    button.cancel {
+        background-color: #f44336;
+        margin-left: 10px;
+    }
+</style>
+</head>
+<body>
+
+<form action="submit-form.php" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female" required>
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="other" required>
+    <label for="other">Other</label>
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" rows="4" required></textarea>
+
+    <label for="telephone">Telephone:</label>
+    <input type="tel" id="telephone" name="telephone" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="course">Course:</label>
+    <select id="course" name="course" required>
+        <option value="">Select Course</option>
+        <option value="computer-science">Computer Science</option>
+        <option value="engineering">Engineering</option>
+        <option value="business">Business</option>
+        <option value="medicine">Medicine</option>
+    </select>
+
+    <button type="submit">Register</button>
+    <button type="button" class="cancel" onclick="window.location.href='index.html';">Cancel</button>
+</form>
+
+</body>
+</html>
